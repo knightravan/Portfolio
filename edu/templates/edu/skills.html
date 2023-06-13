@@ -1,0 +1,35 @@
+{% extends "home/base.html" %}
+
+{% block title %}
+Skills
+{% endblock title %}
+
+{% block containt %}
+<div class="container">
+	<h1 class="text-warning mt-5 border-bottom text-center">Skills</h1>
+
+	<div class="row text-white">
+		{% include "edu/skillone.html" with title="Python" now="85" %}
+
+		{% include "edu/skillone.html" with ofset="offset-sm-2" title="DBMS/SQL" now="80" %}
+
+		{% include "edu/skillone.html" with title="Django Framework" now="97" %}
+
+		{% include "edu/skillone.html" with ofset="offset-sm-2" title="GIT" now="100" %}
+
+		{% include "edu/skillone.html" with title="Data Structure" now="90" %}
+
+		{% include "edu/skillone.html" with ofset="offset-sm-2" title="OOPs" now="85" %}
+
+		{% include "edu/skillone.html" with title="Microsoft Office" now="90" %}
+
+		{% include "edu/skillone.html" with ofset="offset-sm-2" title="Problem Solving" now="93" %}
+
+		{% include "edu/skillone.html" with ofset="offset-sm-2" title="Numpy/Panda" now="75" %}
+	</div>
+
+</div>
+
+
+
+{% endblock containt %}

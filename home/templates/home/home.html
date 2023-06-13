@@ -1,0 +1,24 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block containt %}
+<div class="text-center mt-5">
+	<img src="{% static 'home/images/Image1.jpg' %}" alt="profile pic" class="img-thumbnail" width="250px" height="150px">
+	
+	<div class="text-left mx-6 text-justify">
+		<div class="text-white mt-5">
+		    <h1 class="font-weight-bold stfont">Hello,</h1>
+	    </div>
+	    <div class="text-justify px-4 " style="line-height: 2rem;">
+		    <p style="text-indent:100px; color: white;"> I am <b class="text-warning"> Ajay Kumar Gupta</b>, just completed my Graduation from <b class="text-warning"> PSIT College of Engineering, Kanpur</b>, I am want to became a Backend Developer using <b class="text-warning">Django Framework</b> which is based on Python. Currently, to get a position that will request the finest of the Proficient capacity in term of Specialized and Explanatory aptitudes and give me the oppotunity to reach my full potential professionally and by utilizing my capacities.
+		    </p>
+		</div>
+	</div>
+	<a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5"> Hire me</a>
+	<a href="{% url 'contact' %}" class="btn btn-outline-info my-3"> Contact</a>
+</div>
+{% endblock containt %}

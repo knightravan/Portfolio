@@ -1,0 +1,41 @@
+{% extends "home/base.html" %}
+
+{% block title %}
+Service
+{% endblock title %}
+
+{% block containt %}
+<div class="px-5 container">
+	<h1 class="text-warning mb-5 border-bottom text-center mt-5"> Services</h1>
+
+
+	<div class="row text-white text-center mb-5">
+		{% include "serv/servone.html" with title="web development" fas="fas" icon="code" desciption="create/maintain the backend deelopment through Django(Pyhon), which is sclabale and easy understand code manner." %}
+
+		{% include "serv/servone.html" with title="hosting" icon="database" fas="fas" desciption="Managing database with SQL command and performing CRUD operation." %}
+
+		{% include "serv/servone.html" with title="Graphs" fas="fa" icon="line-chart" desciption="Making Graphs creates custom graphs and charts for your data. I works with variety of formats and offer multiple revision with final product." %}
+
+	</div>
+	<div class="row text-white text-center mb-5">
+		
+		{% include "serv/servone.html" with title="Software Development" fas="fa" desciption="Here to Help you build and maintain high-quality software that meets your unique needs." icon="laptop" %}
+
+		{% include "serv/servone.html" with title="MS Office" icon="microsoft" fas="fab" desciption="Create Professional Powerpoint presentations, Documentation and Other materials to fit your needs." %}
+
+
+		{% include "serv/servone.html" with title="Problem Solving" icon="lightbulb" fas="fa-solid" desciption="Provides expert adice and solutions to help you overcome challenges in you rpersonal and professional life." %}
+	</div>
+	<div class="row text-white text-center mb-5">
+		
+		{% include "serv/servone.html" with title="LOGO design" icon="pencil" fas="fas" desciption="Create a Unique and versatile logo that reflects your's Brand Identity" %}
+
+		
+
+		{% include "serv/servone.html" with title="support" icon="headset" fas="fas" desciption="Our Support serice is available mon-fri 9-5pm to help you with any issue you may have." %}
+	</div>
+
+</div>
+
+
+{% endblock containt %}

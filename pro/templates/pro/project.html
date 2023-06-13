@@ -1,0 +1,32 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}
+Projects
+{% endblock title %}
+
+{% block containt %}
+
+<div class="container">
+
+	<link rel="stylesheet" href="{% static 'pro.css' %}">
+	
+	<h1 class="text-warning mt-5 mb-4 border-bottom text-center">Projects</h1>
+	
+	{% include "pro/proone.html" with title="Portfolio" dcont="A portfolio is a collection of digital content that showcases an indivisual's work,skill and accomplishments. it is used to provide an easy and accessible way for potential." rlink="" %}
+
+	{% include "pro/proone.html" with title="ASL to English Translator" dcont="It performing the process of converting ASL into written English. This can be done using program which is based on Machine Learning. It interpreting them into English word and sentense." rlink="" %}
+
+	{% include "pro/proone.html" with title="Digit Recognisor" dcont="This Program uses Machine Learning algorithms to analyze and recognize patterns in handwriting. The program can be trained a dataset of labeled hand-digits and then classify it." rlink="https://github.com/knightravan/digit-recognizer" %}
+
+	{% include "pro/proone.html" with title="Qr Code Generator" dcont="This Program that allow you to create QR codes. To create a QR Code, You'll need to enter information you want to encode and generate the code." rlink="https://github.com/knightravan/Python-Projects/blob/main/QR_Code_Generator.py" %}
+
+	{% include "pro/proone.html" with title="PDF to MSword" dcont="This Program allows you to convert a PDF file to a MS word document. This can be useful if you want to edit a PDF file but don't have access original source Document." rlink="https://github.com/knightravan/Python-Projects/blob/main/pdf2doc.py" %}
+
+	{% include "pro/proone.html" with title="Keylogger" dcont="A Keylogger is a program that record's every keystroke made on a computer. It will record the Keystroke and save them to a file." rlink="https://github.com/knightravan/Python-Projects/blob/main/Keylogger.py" %}
+	
+
+</div>
+
+
+{% endblock containt %}
